@@ -1,0 +1,456 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../assets/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(../assets/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../assets/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins-MediumItalic';
+    src: url(../assets/Poppins-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../assets/Poppins-SemiBold.ttf);
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Poppins-Medium', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #1F216D;
+}
+
+main {
+    padding: 1.5em;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #DEC045;
+    height: 6em;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4em;
+    font-size: .75em;
+}
+
+nav ul a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins-Semibold', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #6279B8;
+}
+
+nav ul a:is(:link, :active, :visited).active {
+    color: #454ADE;
+    border-bottom: solid 2px #454ADE;
+}
+
+main a {
+    text-decoration: none;
+    font-size: 1.125em;
+    background: #454ADE;
+    color: white;
+    border-radius: 1.5em;
+    text-align: center;
+    padding: .5em 1em;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+    color: #454ADE;
+    padding-bottom: .5em;
+    font-size: 1.25em;
+}
+
+main#home h1 {
+    padding-top: 1.5em;
+}
+
+h2 {
+    font-family: 'Poppins-SemiBold', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.scroll-to-top {
+    position: relative;
+}
+
+.btn {
+    position: fixed;
+    bottom: 50%;
+    right: 1em;
+    z-index: 20;
+    cursor: pointer;
+    visibility: hidden;
+    background-color: transparent;
+    border: 0 solid transparent;
+}
+
+/* Index page main */
+
+main#home img:first-of-type {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main#home img.kasinah {
+    display: block;
+    margin: 1em auto 1em auto;
+    width: 70%;
+}
+
+/* Sections in index main*/
+
+main section {
+    padding-bottom: 3em;
+}
+
+main#home section:first-child {
+    background-color: #F5F5FB;
+    padding-left: 1.5em;
+    margin: -1.5em -1.5em 0 -1.5em;
+}
+
+main#home section:first-child p:first-of-type {
+    font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding-top: 2em;
+    padding-bottom: .5em;
+}
+
+main#home section:first-child p+p {
+    font-family: 'Poppins-ExtraBold', Arial, Helvetica, sans-serif;
+    font-size: 2.25em;
+    color: #454ADE;
+}
+
+main#home section:nth-of-type(2) p {
+    padding-bottom: 1em;
+}
+
+main#home section:nth-of-type(2) p:last-of-type{
+    margin-bottom: -1em;
+}
+
+section:last-of-type {
+    padding-bottom: 8em;
+}
+
+/* Project section index page */
+
+main section.projects article {
+    border-radius: 2em;
+    background-color: #EDEDFB;
+    flex-shrink: 0;
+}
+
+main#home section.projects {
+    display: flex;
+    overflow-x: auto;
+    height: 37.5em;
+    margin-right: -1.5em;
+}
+
+main#home section.projects article {
+    width: 85%;
+    margin-right: 1.5em;
+}
+
+main section.projects article a {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+main section.projects img {
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    object-fit: cover;
+}
+
+
+main section.projects h2 {
+    padding: 1.2em 1.2em 1em 1.2em;
+}
+
+main section.projects p {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+/* Contact page */
+
+
+main#contact ul {
+    text-align: center;
+}
+
+/* main#contact ul li {
+    display: inline-block;
+} */
+
+main#contact a.contact {
+    font-family: 'VarelaRound-Regular', Arial, Helvetica, sans-serif;
+    color: #1F216D;
+    background-color: #EDEDFB;
+    border-radius: 1.5em;
+    padding: 1em;
+}
+
+main#contact img {
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+
+
+/* Projecten pages */
+
+img.mockup {
+    width: 100%;
+    padding-bottom: 1.5em;
+}
+
+main header.projecten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+    padding-bottom: 1.5em;
+}
+
+main#projecten section.projects article {
+    margin-bottom: 1.5em;
+}
+
+main header.projecten a {
+    font-size: 1em;
+    margin: 0;
+}
+
+main#wijzer header.projecten a:first-of-type, main#srp header.projecten a:nth-of-type(2) {
+    background-color: #DE5F5B;
+}
+
+main header.projecten h1 {
+    padding-bottom: 0;
+}
+
+main#wijzer img.design {
+    width: 100%;
+}
+
+section.opdracht {
+    background-color: #EDEDFB;
+    padding: 1em;
+    margin-bottom: 3em;
+    border-radius: 1.5em;
+}
+
+section.opdracht p:first-of-type {
+    font-family: 'Poppins-SemiBold', Arial, Helvetica, sans-serif;
+}
+
+section.geleerd {
+    margin-bottom: -1.5em;
+}
+
+section.geleerd ul {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1.5em;
+}
+
+section.geleerd ul li, figcaption, section.functies p:nth-of-type(odd) {
+    font-family: 'Poppins-MediumItalic', Arial, Helvetica, sans-serif;
+}
+
+section.geleerd ul li {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 30%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1.5em;
+}
+
+main#iot section.geleerd ul li {
+    justify-content: end;
+}
+
+section.geleerd ul img {
+    width: 50%;
+    padding-bottom: .5em;
+}
+
+section.beschrijving p:first-of-type {
+    padding-bottom: 1em;
+}
+
+section.beschrijving img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.beschrijving figure {
+    margin-top: 2em;
+}
+
+section.beschrijving figcaption {
+    text-align: center;
+}
+
+section.beschrijving p+p {
+    padding-bottom: 1em;
+}
+
+section.functies {
+    background-color: #C4C5F3;
+    margin: -1.5em;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+section.functies img.design, main#iot section.functies video {
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
+}
+
+/* https://css-tricks.com/css-counters-custom-list-number-styling/ */
+ol li {
+    display: block;
+    position: relative;
+    counter-increment: inst;
+}
+
+ol li::before {
+    content: counter(inst);
+    background-color: #DEBC2F;
+    color: #454ADE;
+
+    font-family:'Poppins-ExtraBold', Arial, Helvetica, sans-serif;;
+    font-weight: 900;
+
+    border-radius: .75em;
+    font-size: 1.5em;
+    text-align: center;
+
+    padding-top: .5em;
+    left: 1em;
+    top: 8em;
+    height: 2.5em;
+    width: 2.5em;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Nike page */
+
+section.functies a + a {
+    margin-top: .5em;
+}
+
+main#nike video {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2.5em;
+}
+
+
+/* Reis page */
+
+ul.reismomenten>li {
+    font-family: 'Poppins-MediumItalic', Arial, Helvetica, sans-serif;
+}
+
+ul.reismomenten ul li, ul.spel {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
+main#web section.functies p:first-of-type, ul.reismomenten ul li:last-of-type {
+    padding-bottom: 1em;
+}
+
+main#web section.functies p:first-of-type {
+    font-family: 'Poppins-Medium', Arial, Helvetica, sans-serif;
+}
+
+
+/* IoT page */
+
+main#iot section.functies img, main#iot section.functies video {
+    width: 100%;
+}
+
+main#iot section.functies h2:nth-of-type(2) {
+    padding-top: 1.5em;
+}
+
+/* SRP page */
+
+main#srp video {
+    width: 100%;
+}

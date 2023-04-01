@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Kasinah's portfolio</title>
+        
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="images/logo_portfolio.svg" alt="logo portfolio">Kasinah</a></li>
+                <li><a href="#"><img src="images/projecten.svg" alt="portfolio icon">Projecten</a></li>
+                <li><a href="contact.html"><img src="images/contact.svg" alt="contact icon">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="iot">
+
+        <header class="projecten">
+            <a href="project_nike.html">&#60; Nike</a>
+            <h1>Minor IoT</h1>
+            <a href="project_srp.html">SRP &#62;</a>
+
+        </header>
+
+        <img src="images/iot.png" class="mockup" alt="iot setup">
+
+        <section class="opdracht">
+            <p>Opdracht:</p>
+            <p>Maak een eigen digitale dobbelstenen waar een drankspel mee gespeeld kan worden.</p>
+        </section>
+
+        <section class="geleerd">
+            <h2>Geleerd:</h2>
+
+            <ul>
+                <li><img src="images/arduino.png" class="skills" alt="logo arduino">Arduino</li>
+                <li><img src="images/php_my_admin.png" class="skills" alt="logo phpmyadmin">PHPMyAdmin</li>
+                <li><img src="images/php.png" class="skills" alt="logo php">PHP</li>
+                <li><img src="images/html.png" class="skills" alt="logo html">HTML5</li>
+                <li><img src="images/css.png" class="skills" alt="logo css">CSS3</li>
+                <li><img src="images/javascript.png" class="skills" alt="logo javascript">JavaScript</li>
+            </ul>
+        </section>
+
+        <section class="beschrijving">
+            <h2>Beschrijving:</h2>
+            <p>In mijn derde jaar heb ik de minor Internet of Things gevolgd. Het Internet of Things bestaat uit fysieke voorwerpen die met het internet verbonden zijn en zo gegevens met elkaar uitwisselen.</p>
+            <p>Tijdens mijn opdracht heb ik gebruik gemaakt van een WeMos D1. Dit is een micro controller (mini computer), dat gebruik maakt van WiFi. Ook heb ik twee input sensoren en twee output sensoren gebruikt.</p>
+
+            <p>Mijn digital dice kan gebruikt worden tijdens een drankspel. Een persoon start met de dice in zijn handen. Door op de knop te drukken, wordt de dice gerold. De dice vertelt de gebruiker wat hij moet doen:</p>
+            <ul class="spel">
+                <li>Gooi 1: geef de dice aan de persoon rechts.</li>
+                <li>Gooi 6: de dice gaat naar de persoon links.</li>
+                <li>Als de gebruiker 2 gooit, moet hij een shotje nemen.</li>
+            </ul>
+
+        </section>
+
+        <section class="functies">
+
+            <img src="images/iot_sensors.png" class="design" alt="sensoren dice game">
+            <p>Output sensoren</p>
+            <p>Mijn digital dice bevat een LED matrix, die de dice rolls en hun betekenissen weergeven. Wanneer de gebruiker 2 gooit, brandt de rode LED. Alle andere dice rolls laten de groene LED branden.</p>
+            
+            <video controls>
+                <source src="videos/iot_ldr.mp4" type="video/mp4">
+            </video>
+            <p>Input sensoren</p>
+            <p>De push button functioneert als input sensor. Ook heb ik een lichtgevoelige weerstand (Light Dependent Resistor = LDR) sensor gebruikt. De sensor meet hoeveel licht er is. Hoe donkerder het is, hoe harder de rode of de groene LED gaat branden. </p>
+
+            <img src="images/iot_database.jpg" class="design" alt="database dice game">
+            <p>Database</p>
+            <p>De dice rolls worden via d.m.v. WiFi en mijn php code opgeslagen in mijn eigen database. Dit wordt mogelijk gemaakt door mijn WeMos die is verbonden met het internet. De data uit mijn database wordt gesorteerd op tijd, zodat mijn php document de laatste zes dice rolls selecteert en laat zien op mijn website.</p>
+
+            <video controls muted>
+                <source src="videos/iot_dice.mp4" type="video/mp4">
+            </video>
+            <p>Digital dice game</p>
+            <p>Wanneer alles werkt, ziet mijn digital dice game er dus zo uit.</p>
+
+            <a href="https://iot.dev.hihva.nl/2022-2023-sep-jan/individual-project/iot-latumak/" target="_blank" rel="noopener noreferrer">Bekijk documentatie</a>
+        </section>
+
+        <div class="scroll-to-top">
+            <button type="button" class="btn"><img src="images/top.svg" alt="top arrow"></button>
+        </div>
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

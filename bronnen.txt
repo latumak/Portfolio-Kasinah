@@ -1,0 +1,18 @@
+Bronvermelding:
+
+1. Logo Figma:
+2. Logo Notion: https://uxwing.com/notion-icon/
+3. Logo Adobe XD: https://commons.wikimedia.org/wiki/File:Adobe_XD_CC_icon.svg#/media/File:Adobe_XD_CC_icon.svg
+4. Logo Adobe InDesign: https://commons.wikimedia.org/wiki/File:Adobe_InDesign_CC_icon.svg#/media/File:Adobe_InDesign_CC_icon.svg
+5. Logo HTML: https://worldvectorlogo.com/logo/html-1
+6. Logo CSS: https://worldvectorlogo.com/logo/css-3
+7. Logo JavaScript: https://worldvectorlogo.com/logo/javascript-1
+8. Logo PHP: https://worldvectorlogo.com/logo/php-1
+9. Logo PhPMyAdmin: https://commons.wikimedia.org/wiki/File:PhpMyAdmin_logo.svg
+10. Logo Arduino: https://worldvectorlogo.com/logo/arduino-1 
+
+
+ Mockup Iphone:
+ Mockup MacBook: https://dribbble.com/shots/2476220-MacBook-12-Scalable-Mock-up
+
+https://css-tricks.com/css-counters-custom-list-number-styling/
