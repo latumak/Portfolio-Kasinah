@@ -89,7 +89,6 @@ nav ul a:is(:link, :active, :visited).active {
 
 main a {
     text-decoration: none;
-    font-size: 1.125em;
     background: #454ADE;
     color: white;
     border-radius: 1.5em;
@@ -277,7 +276,7 @@ main#projecten section.projects article {
 }
 
 main header.projecten a {
-    font-size: 1em;
+    font-size: .9em;
     margin: 0;
 }
 
